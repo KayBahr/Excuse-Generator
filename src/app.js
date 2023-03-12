@@ -5,19 +5,51 @@ window.onload = function excuseGenerator() {
 };
 
 let generateExcuse = function generateExcuse() {
-  let who = ["The dog", "My grandma", "His turtle", "My bird"];
+  let who = [
+    "The dog",
+    "My grandma",
+    "His turtle",
+    "My bird",
+    "The son",
+    "My doctor",
+    "The police",
+    "My old classmate",
+    "A squirrel",
+    "A neighbor"
+  ];
 
-  let action = ["ate", "peed", "crushed", "broke"];
+  let action = [
+    "ate",
+    "peed",
+    "crushed",
+    "broke",
+    "borrowed",
+    "locked away",
+    "selled"
+  ];
 
-  let what = ["my homework", "the keys", "the car"];
+  let what = [
+    "my homework",
+    "the keys",
+    "the car",
+    "my rabbit",
+    "my pants",
+    "my mother",
+    "the television",
+    "my glasses"
+  ];
 
   let when = [
-    "before the class",
-    "right on time",
-    "when I finished",
-    "during my lunch",
-    "while I was praying"
-  ]; /* Update arrays for fun hopefully it will save*/
+    "before the class.",
+    "right on time.",
+    "when I finished.",
+    "during my lunch.",
+    "while I was praying.",
+    "last night.",
+    "on Christmas.",
+    "after breakfast.",
+    "at noon."
+  ];
 
   let whoRand = Math.floor(Math.random() * who.length);
   let actionRand = Math.floor(Math.random() * action.length);
