@@ -1,11 +1,14 @@
 window.onload = function excuseGenerator() {
-  let randomWho = Math.floor(Math.random() * 4 + 1);
+  document.getElementById("excuse").innerText = generateExcuse();
+};
+
+let generateExcuse = function generateExcuse() {
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
-  Math.floor(Math.random() * 4 + 1);
+
   let action = ["ate", "peed", "crushed", "broke"];
-  Math.floor(Math.random() * 4 + 1);
+
   let what = ["my homework", "the keys", "the car"];
-  Math.floor(Math.random() * +1);
+
   let when = [
     "before the class",
     "right on time",
@@ -14,9 +17,18 @@ window.onload = function excuseGenerator() {
     "while I was praying"
   ];
 
-  var excuse = (document.getElementById("excuse").innerText = randomWho);
+  let whoRand = Math.floor(Math.random() * who.length);
+  let actionRand = Math.floor(Math.random() * action.length);
+  let whatRand = Math.floor(Math.random() * what.length);
+  let whenRand = Math.floor(Math.random() * when.length);
 
-  who.concat(" ", action, " ", what, " ", when);
-
-  return excuse;
+  return (
+    who[whoRand] +
+    " " +
+    action[actionRand] +
+    " " +
+    what[whatRand] +
+    " " +
+    when[whenRand]
+  );
 };
