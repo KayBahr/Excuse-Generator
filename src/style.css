@@ -1,14 +1,19 @@
-html, body {
-    height: 100%;
-}
-
 html {
     display: table;
     margin: auto;
 }
 
 body {
-    display: table-cell;
-    vertical-align: middle;
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+h1 {
+    text-align:center;
+}
+
+#button {
+    align-items: center;
 }
 /* Add the minimul styling like centering and button styles*/
