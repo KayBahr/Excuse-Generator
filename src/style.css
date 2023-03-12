@@ -2,4 +2,7 @@ head {
     display: none;
 }
 
+body {
+    text-align: center;
+}
 /* Add the minimul styling like centering and button styles*/
