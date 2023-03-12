@@ -15,7 +15,7 @@ let generateExcuse = function generateExcuse() {
     "when I finished",
     "during my lunch",
     "while I was praying"
-  ];
+  ]; /* Update arrays for fun */
 
   let whoRand = Math.floor(Math.random() * who.length);
   let actionRand = Math.floor(Math.random() * action.length);
