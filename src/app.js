@@ -1,11 +1,11 @@
-document.getElementById("excuse").onload = function excuseGenerator() {
-  Math.floor(Math.random() * who.length + 1);
+window.onload = function excuseGenerator() {
+  let randomWho = Math.floor(Math.random() * 4 + 1);
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
-  Math.floor(Math.random() * action.length + 1);
+  Math.floor(Math.random() * 4 + 1);
   let action = ["ate", "peed", "crushed", "broke"];
-  Math.floor(Math.random() * what.length + 1);
+  Math.floor(Math.random() * 4 + 1);
   let what = ["my homework", "the keys", "the car"];
-  Math.floor(Math.random() * when.length + 1);
+  Math.floor(Math.random() * +1);
   let when = [
     "before the class",
     "right on time",
@@ -14,14 +14,9 @@ document.getElementById("excuse").onload = function excuseGenerator() {
     "while I was praying"
   ];
 
-  var excuse = (document.getElementById("excuse").innerText = who.concat(
-    " ",
-    action,
-    " ",
-    what,
-    " ",
-    when
-  ));
+  var excuse = (document.getElementById("excuse").innerText = randomWho);
+
+  who.concat(" ", action, " ", what, " ", when);
 
   return excuse;
 };
