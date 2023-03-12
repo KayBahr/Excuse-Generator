@@ -1,5 +1,7 @@
 window.onload = function excuseGenerator() {
-  document.getElementById("excuse").innerText = generateExcuse();
+  document.getElementById("button").addEventListener("click", function() {
+    document.getElementById("excuse").innerText = generateExcuse();
+  });
 };
 
 let generateExcuse = function generateExcuse() {
@@ -15,7 +17,7 @@ let generateExcuse = function generateExcuse() {
     "when I finished",
     "during my lunch",
     "while I was praying"
-  ]; /* Update arrays for fun */
+  ]; /* Update arrays for fun hopefully it will save*/
 
   let whoRand = Math.floor(Math.random() * who.length);
   let actionRand = Math.floor(Math.random() * action.length);
