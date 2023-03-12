@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ezcuse Generator</title>
+    <title>Excuse Generator</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="javascript code" href="app.js">
+    <script type="text/javascript" src="app.js"></script>
 </head>
-<body onload="excuseGenerator">
+<body>
 
-<h1>OMG! You will not believe me but...</h1>
-<p id="excuse">My dog ate my homework.</p>
+    <h1>OMG! You will not believe me but...</h1>
+    <p id="excuse" onload="excuseGenerator">My dog ate my homework</p>
+    <script type="text/javascript">
+        excuseGenerator();
+    </script>
 
 </body>
 </html>
