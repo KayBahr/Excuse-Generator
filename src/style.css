@@ -1,8 +1,14 @@
-head {
-    display: none;
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
 }
 
 body {
-    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 /* Add the minimul styling like centering and button styles*/
